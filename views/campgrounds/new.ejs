@@ -1,0 +1,50 @@
+<% include ../partials/header %>
+<div class="container">
+	<!-- <div class="row"> -->
+		
+		<div style="width: 25%; margin: 25px auto;">
+			<form action="/campgrounds" method="POST" class="form-signin">
+				<div class=" text-center mb-4" style=" margin: 50px auto;">
+					<h1 class="h3 mb-3 font-weight-normal">Create a new campground!</h1>
+				</div>
+				
+				<div class="form-label-group">
+					<!-- <label for="campName" class="  col-form-label">Camp Name</label> -->
+					<!-- <div class="row"> -->
+					  <input type="text" class="form-control" id="campName" placeholder="Name" name="name" required autofocus style=" margin: 20px auto;">
+					<!-- </div> -->
+				</div>
+				<div class="form-label-group">
+					<!-- <label for="campName" class="  col-form-label">Camp Name</label> -->
+					<!-- <div class="row"> -->
+					  <input type="number" class="form-control" id="campName" placeholder="Price" name="Price" required min="1" step="0.50" autofocus style=" margin: 20px auto;">
+					<!-- </div> -->
+				</div>
+				<div class="form-label-group">
+					<!-- <label for="imageURL" class=" col-form-label">Image URL</label> -->
+					<!-- <div class="row"> -->
+					  <input type="text" class="form-control" id="imageURL" placeholder="Image URL" name="image" style=" margin: 20px auto;" required>
+					<!-- </div> -->
+				</div>
+				
+				<div class="form-label-group">
+					<!-- <label for="description" class=" col-form-label">Image URL</label> -->
+					<!-- <div class="row"> -->
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Description" name="description"></textarea>
+					<!-- <input type="text" class="form-control" id="description"  style=" margin: 20px auto;" required> -->
+					<!-- </div> -->
+				</div>
+					<button type="submit" class="btn btn-primary btn-lg btn-block" style=" margin: 20px auto; width= 25%;">Submit!</button>
+			
+			</form>
+			<a href="/campgrounds">Go Back</a>
+			<p class="mt-5 mb-3 text-muted text-center">© YelpCamp 2019</p>
+		</div>
+		
+	<!-- </div> -->
+	
+</div>
+
+
+
+<% include ../partials/footer %>

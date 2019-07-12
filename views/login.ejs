@@ -1,0 +1,43 @@
+
+
+
+<% include ./partials/header %>
+
+
+
+
+
+<div class="container">
+	<!-- <div class="row"> -->
+		
+		<div style="width: 25%; margin: 25px auto;">
+			<form action="/login" method="POST" class="form-signin">
+				<div class=" text-center mb-4" style=" margin: 50px auto;">
+					<h1 class="h3 mb-3 font-weight-normal">Login!</h1>
+				</div>
+				
+				<div class="form-label-group">
+					<!-- <label for="campName" class="  col-form-label">Camp Name</label> -->
+					<!-- <div class="row"> -->
+					  <input type="text" class="form-control" id="campName" placeholder="username" name="username" required autofocus style=" margin: 20px auto;">
+					<!-- </div> -->
+				</div>
+				<div class="form-label-group">
+					<!-- <label for="imageURL" class=" col-form-label">Image URL</label> -->
+					<!-- <div class="row"> -->
+					  <input type="password" class="form-control" id="imageURL" placeholder="password" name="password" style=" margin: 20px auto;" required>
+					<!-- </div> -->
+				</div>
+				
+				
+					<button type="submit" class="btn btn-primary btn-lg btn-block" style=" margin: 20px auto; width= 25%;">Login!</button>
+			
+			</form>
+			<a href="/">Go Back</a>
+			<p class="mt-5 mb-3 text-muted text-center">© YelpCamp 2019</p>
+		</div>
+		
+	<!-- </div> -->
+	
+</div>
+<% include ./partials/footer %>
