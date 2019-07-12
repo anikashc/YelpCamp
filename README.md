@@ -1,1 +1,1 @@
-# YelpCamp-and-others
+# YelpCamp
